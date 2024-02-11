@@ -80,57 +80,57 @@ class _AppBarHomeState extends State<AppBarHome> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 8.w),
-                    InkWell(
-                      onTap: () {
-                        // push(const Notifications());
-                      },
-                      child: Stack(
-                        children: <Widget>[
-                          Container(
-                            width: (48.w),
-                            height: (48.h),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16.r),
-                                color: AppColors.grayLite),
-                            child: Center(
-                              child: SVGIcon(
-                                Assets.bell,
-                                width: (24.w),
-                                height: (24.h),
-                              ),
-                            ),
-                          ),
-                          // data.homeModel?.data?.notificationCount != null ||
-                          //         data.homeModel?.data?.notificationCount != 0
-                          //     ? SizedBox():
-                          // Positioned(
-                          //         top: 5,
-                          //         right: 5,
-                          //         child: Container(
-                          //           padding: const EdgeInsets.all(2),
-                          //           decoration: BoxDecoration(
-                          //             borderRadius:
-                          //                 BorderRadius.circular(100.r),
-                          //             border: Border.all(
-                          //                 width: .8.w,
-                          //                 color: AppColors.grayLite),
-                          //             color: AppColors.main,
-                          //           ),
-                          //           child: Center(
-                          //             child: Text(
-                          //               // data.homeModel?.data?.notificationCount.toString() ?? '',
-                          //               '2',
-                          //               style: TextStyles()
-                          //                   .getTitleStyle(fontSize: 9.sp)
-                          //                   .customColor(AppColors.white),
-                          //             ),
-                          //           ),
-                          //         ),
-                          //       )
-                        ],
-                      ),
-                    ),
+                    SizedBox(width: 8.w)
+                    // InkWell(
+                    //   onTap: () {
+                    //     // push(const Notifications());
+                    //   },
+                    //   child: Stack(
+                    //     children: <Widget>[
+                    //       Container(
+                    //         width: (48.w),
+                    //         height: (48.h),
+                    //         decoration: BoxDecoration(
+                    //             borderRadius: BorderRadius.circular(16.r),
+                    //             color: AppColors.grayLite),
+                    //         child: Center(
+                    //           child: SVGIcon(
+                    //             Assets.bell,
+                    //             width: (24.w),
+                    //             height: (24.h),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //       // data.homeModel?.data?.notificationCount != null ||
+                    //       //         data.homeModel?.data?.notificationCount != 0
+                    //       //     ? SizedBox():
+                    //       // Positioned(
+                    //       //         top: 5,
+                    //       //         right: 5,
+                    //       //         child: Container(
+                    //       //           padding: const EdgeInsets.all(2),
+                    //       //           decoration: BoxDecoration(
+                    //       //             borderRadius:
+                    //       //                 BorderRadius.circular(100.r),
+                    //       //             border: Border.all(
+                    //       //                 width: .8.w,
+                    //       //                 color: AppColors.grayLite),
+                    //       //             color: AppColors.main,
+                    //       //           ),
+                    //       //           child: Center(
+                    //       //             child: Text(
+                    //       //               // data.homeModel?.data?.notificationCount.toString() ?? '',
+                    //       //               '2',
+                    //       //               style: TextStyles()
+                    //       //                   .getTitleStyle(fontSize: 9.sp)
+                    //       //                   .customColor(AppColors.white),
+                    //       //             ),
+                    //       //           ),
+                    //       //         ),
+                    //       //       )
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
               ],
