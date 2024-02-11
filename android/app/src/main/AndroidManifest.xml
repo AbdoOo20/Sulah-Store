@@ -24,7 +24,7 @@
         </intent>
     </queries>
     <application
-        android:label="ايداع سيولة(التاجر)"
+        android:label="ايداع سيولة - التاجر"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
