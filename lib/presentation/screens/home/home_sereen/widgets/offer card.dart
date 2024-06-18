@@ -9,14 +9,14 @@ import '../../../../../core/resources/app_colors.dart';
 import '../../../../../core/resources/locale_keys.g.dart';
 import '../../../../component/svg_icon.dart';
 
-class ProductsCard extends StatelessWidget {
-  const ProductsCard({Key? key}) : super(key: key);
+class OfferCard extends StatelessWidget {
+  const OfferCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-       height: 120.h,
-       width: 120.h,
+      height: 120.h,
+      width: 120.h,
       child: Card(
         // margin: EdgeInsets.only(
         //     bottom: kScreenPaddingNormal.h,
@@ -34,14 +34,14 @@ class ProductsCard extends StatelessWidget {
           mainAxisAlignment:
           MainAxisAlignment.center,
           children: [
-            SVGIcon(
-              Assets.products,
-              width: 48.w,
-              height: 48.h,
+            Icon(
+              Icons.shopping_basket_outlined,
+              color: AppColors.main,
+              size: 48.w,
             ),
             SizedBox(height: 12.h),
             Text(
-              LocaleKeys.products.tr(),
+              LocaleKeys.offer.tr(),
               style: TextStyles()
                   .getTitleStyle(
                   fontSize: 16.sp)

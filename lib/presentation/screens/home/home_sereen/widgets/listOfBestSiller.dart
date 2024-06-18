@@ -18,6 +18,7 @@ final   List<TopSalesProduct>? topSalesProduct;
     return SizedBox(height:187.33.h,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(),
           shrinkWrap: true,
           itemCount:topSalesProduct?.length,
           itemBuilder: (context, index) {

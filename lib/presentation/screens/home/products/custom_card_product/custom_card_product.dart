@@ -32,8 +32,6 @@ class _CustomCaredProductState extends State<CustomCaredProducts> {
     bool eye = widget.isShow==1?true:false;
     return Container(
       padding: EdgeInsets.all(12.r),
-      height: 179.h,
-      width: 167.5.w,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color: AppColors.white,
@@ -58,7 +56,7 @@ class _CustomCaredProductState extends State<CustomCaredProducts> {
             ),
           ),
         ),
-        SizedBox(height: 2.h),
+        const Spacer(),
         Align(
           alignment: Alignment.bottomCenter,
           child: SizedBox(

@@ -57,9 +57,9 @@ class _EarningsThisMonthChartState extends State<BranchEarningsThisMonthChart> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                        Text('${widget.statisticsModel?.data?.differenceValue ?? 0}', textAlign: TextAlign.right,
+                        Text('${widget.statisticsModel?.data?.differenceValue  ?? 0}', textAlign: TextAlign.right,
                           style: TextStyles()
-                              .getTitleStyle(fontSize: 12.sp)
+                              .getTitleStyle(fontSize: 10.sp)
                               .customColor(AppColors.white),),
 
                       ],

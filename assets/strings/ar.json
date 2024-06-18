@@ -382,5 +382,12 @@
   "isProductShipped": "هل المنتج يشحن ام لا !",
   "addQuantity": "اضف كمية",
   "daily": "يوميا",
-  "Write message...": "اكتب رسالتك ...."
+  "Write message...": "اكتب رسالتك ....",
+  "offer": "العروض",
+  "enterPrice": "أدخل السعر",
+  "add": "إضافة",
+  "enterPriceTitle": "إضافة سعر",
+  "acceptOffer": "تم قبول العرض الخاص بك",
+  "payFrom": "يمكنك الدفع عن طريق",
+  "completePaymentInformation": "معلومات الدفع الكاملة"
 }

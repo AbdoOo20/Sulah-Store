@@ -54,6 +54,10 @@ abstract class  LocaleKeys {
 
   //products start
   static const Products = 'Products';
+  static const String enterPriceTitle = 'enterPriceTitle';
+  static const String enterPrice = 'enterPrice';
+  static const String acceptOffer = 'acceptOffer';
+  static const String add = 'add';
   static const addsection = 'addsection';
   static const addproduct = 'addproduct';
   static const addaProducts = 'addaProducts';
@@ -72,6 +76,7 @@ abstract class  LocaleKeys {
   static const cancel1 = 'cancel';
   static const addition = 'addition';
   static const save = 'save';
+  static const offer = 'offer';
  // static const rial = 'rial';
   static const price = 'price';
   static const extensionname = 'extensionname';
@@ -170,6 +175,8 @@ abstract class  LocaleKeys {
    ///
   static const completedOrders = 'CompletedOrders';
   static const newOrders = 'NewOrders';
+  static const payFrom = 'payFrom';
+  static const completePaymentInformation = 'completePaymentInformation';
   static const currentOrders = 'currentOrders';
   static const attachRequest = 'attachRequest';
   static const unit = 'unit';

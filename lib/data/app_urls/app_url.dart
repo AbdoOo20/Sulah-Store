@@ -36,5 +36,7 @@ class AppURL {
   static const String kCarsURL = "stores/cars";
   static const String kBrandsURL = "stores/brands";
   static const String kDepartmentsURL = "stores/departments";
-
+  ///offer
+  static const String kOfferURL = "stores/offers";
+  static const String kAddOfferURL = "stores/addOrderToOffer";
 }

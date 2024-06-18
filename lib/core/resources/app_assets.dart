@@ -79,7 +79,8 @@ class Assets {
   static const String productsCard = 'assets/images/svg/productsCard.svg';
   static const String imageIcon = 'assets/images/svg/imageIcon.svg';
 
-  static const String imagesMada = '';
+  static const String imagesMada = 'assets/images/svg/mada.svg';
+  static const String imagesTaby = 'assets/images/svg/tabby.svg';
   static const String imagesCash = '';
   static const String imagesApplePay = '';
   static const String gifEmptyList = 'assets/images/gif/empty_list.gif';

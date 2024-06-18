@@ -14,20 +14,20 @@ class OrderCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(  height: 132.h,
-      width: 163.5.w,
+    return SizedBox(
+      height: 120.h,
+      width: 120.h,
+
       child: Card(
         elevation: 3,
         color: AppColors.white,
         shadowColor: AppColors.main10,
-        shape: RoundedRectangleBorder(
-            borderRadius:
-            BorderRadius.circular(16.r)),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
         child: Padding(
           padding: EdgeInsets.all(8.0.r),
           child: Column(
-            mainAxisAlignment:
-            MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SVGIcon(
                 Assets.orders,
@@ -38,10 +38,8 @@ class OrderCard extends StatelessWidget {
               Text(
                 LocaleKeys.orders.tr(),
                 style: TextStyles()
-                    .getTitleStyle(
-                    fontSize: 16.sp)
-                    .customColor(
-                    AppColors.black),
+                    .getTitleStyle(fontSize: 16.sp)
+                    .customColor(AppColors.black),
               ),
             ],
           ),

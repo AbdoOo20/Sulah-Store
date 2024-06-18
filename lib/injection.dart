@@ -3,6 +3,7 @@ import 'package:khedmaty_store/data/model/body/RegisterBody.dart';
 import 'package:khedmaty_store/presentation/screens/auth/register/RegisterViewModel.dart';
 import 'package:khedmaty_store/presentation/screens/auth/forgetPassword/otp/otp_view_model.dart';
 import 'package:khedmaty_store/presentation/screens/home/home_sereen/homeViewModel.dart';
+import 'package:khedmaty_store/presentation/screens/home/offers/offer%20view%20model.dart';
 import 'package:khedmaty_store/presentation/screens/home/orders/oreders_view_model.dart';
 import 'package:khedmaty_store/presentation/screens/home/products/products_view_model.dart';
 import 'package:dio/dio.dart';
@@ -55,6 +56,7 @@ Future<void> init() async {
   getIt.registerLazySingleton(() => AddProductViewModel( productsRepo: getIt()));
   getIt.registerLazySingleton(() => RatesViewModel( ratesRepo: getIt()));
   getIt.registerLazySingleton(() => CompatibleWithViewModel());
+  getIt.registerLazySingleton(() => OfferProvider());
   /// Repository
   getIt.registerLazySingleton(() => SaveUserData(sharedPreferences: getIt(), dioClient: getIt()));
   getIt.registerLazySingleton(() => AuthRepo(dioClient: getIt(), saveUserData: getIt()));

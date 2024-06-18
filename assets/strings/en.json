@@ -379,5 +379,12 @@
   "minute":"minute",
   "addQuantity":"Add quantity",
   "daily":"Daily",
-  "Write message...": "Write message..."
+  "Write message...": "Write message...",
+  "offer": "Offers",
+  "enterPrice": "Enter Price",
+  "enterPriceTitle": "Add Price",
+  "add": "Add",
+  "acceptOffer": "Your offer is accepted",
+  "payFrom": "You can pay from",
+  "completePaymentInformation": "complete Payment Information"
 }

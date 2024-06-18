@@ -1,6 +1,7 @@
 import 'package:khedmaty_store/presentation/screens/auth/register/RegisterViewModel.dart';
 import 'package:khedmaty_store/presentation/screens/auth/forgetPassword/otp/otp_view_model.dart';
 import 'package:khedmaty_store/presentation/screens/home/home_sereen/homeViewModel.dart';
+import 'package:khedmaty_store/presentation/screens/home/offers/offer%20view%20model.dart';
 import 'package:khedmaty_store/presentation/screens/home/products/products_view_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:khedmaty_store/presentation/screens/setting/connect_Us/contactUs_view_model.dart';
@@ -40,6 +41,7 @@ class GenerateMultiProvider extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => getIt<AddProductViewModel>()),
         ChangeNotifierProvider(create: (_) => getIt<RatesViewModel>()),
         ChangeNotifierProvider(create: (_) => getIt<CompatibleWithViewModel>()),
+        ChangeNotifierProvider(create: (_) => getIt<OfferProvider>()),
       ],
       child: child,
     );

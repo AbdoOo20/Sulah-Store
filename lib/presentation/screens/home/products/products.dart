@@ -29,96 +29,103 @@ class _ProductsState extends State<Products> {
   }
 
   Future<void> _loadData(BuildContext context) async {
-    await Provider.of<ProductsViewModel>(context, listen: false).getProducts(context, '');
+    await Provider.of<ProductsViewModel>(context, listen: false)
+        .getProducts(context, '');
   }
 
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
-          appBar: CustomAppBar(
-    title: LocaleKeys.Products.tr(),
-    titleColor: AppColors.black,
-    color: Colors.transparent,
-          ),
-          body: Container(
-    color: AppColors.productScreenColor,
-    child: RefreshIndicator(
-        onRefresh: () async => await _loadData(context),
-        child: Consumer<ProductsViewModel>(
-            builder: (context, productsData, child) =>
-                Padding(
-                  padding: EdgeInsets.only(
-                      left: 16.w, right: 16.w, bottom: 16.h),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 24.h, bottom: 24.h),
-                        child: InkWell(
-                            onTap: () {
-                              push(AddProducts(isEdite: false));
-                            },
-                            child: const AddProduct()),
-                      ),
-                      Expanded(
-                          child: ScreenStateLayout(
-                              isLoading:
-                              ( productsData?.productsModel?.data == null || productsData.loading ==true),
-                              isEmpty:
-                              productsData?.productsModel?.data?.isEmpty ??
-                                  false,
-                              onRetry: () => _loadData(context),
-                              builder: (context) => GridView.builder(
-                                    gridDelegate:
-                                        SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2,
-                                      //childAspectRatio: 1.5,
-                                      crossAxisSpacing: 8.h,
-                                      mainAxisSpacing: 8.h,
-                                    ),
-                                    itemCount: productsData
-                                        .productsModel?.data?.length,
-                                    itemBuilder: (context, index) {
-                                      return InkWell(
-                                        onTap: () {
-                                          showModalBottomSheet(
-                                            context: context,
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.vertical(
-                                                top: Radius.circular(20.r),
-                                              ),
-                                            ),
-                                            builder: (context) =>
-                                                EditBottomSheet(
-                                              oneProduct: productsData
-                                                  .productsModel
-                                                  ?.data?[index],
+      appBar: CustomAppBar(
+        title: LocaleKeys.Products.tr(),
+        titleColor: AppColors.black,
+        color: Colors.transparent,
+      ),
+      body: Container(
+        color: AppColors.productScreenColor,
+        child: RefreshIndicator(
+            onRefresh: () async => await _loadData(context),
+            child: Consumer<ProductsViewModel>(
+                builder: (context, productsData, child) => Padding(
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, bottom: 16.h),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: 24.h, bottom: 24.h),
+                            child: InkWell(
+                                onTap: () {
+                                  push(AddProducts(isEdite: false));
+                                },
+                                child: const AddProduct()),
+                          ),
+                          Expanded(
+                              child: ScreenStateLayout(
+                                  isLoading:
+                                      (productsData?.productsModel?.data ==
+                                              null ||
+                                          productsData.loading == true),
+                                  isEmpty: productsData
+                                          ?.productsModel?.data?.isEmpty ??
+                                      false,
+                                  onRetry: () => _loadData(context),
+                                  builder: (context) => GridView.builder(
+                                        physics: const BouncingScrollPhysics(),
+                                        gridDelegate:
+                                            SliverGridDelegateWithFixedCrossAxisCount(
+                                          crossAxisCount: 2,
+                                          childAspectRatio: 1 / 1.3,
+                                          crossAxisSpacing: 8.h,
+                                          mainAxisSpacing: 8.h,
+                                        ),
+                                        itemCount: productsData
+                                            .productsModel?.data?.length,
+                                        itemBuilder: (context, index) {
+                                          return InkWell(
+                                            onTap: () {
+                                              showModalBottomSheet(
+                                                context: context,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.vertical(
+                                                    top: Radius.circular(20.r),
+                                                  ),
+                                                ),
+                                                builder: (context) =>
+                                                    EditBottomSheet(
+                                                  oneProduct: productsData
+                                                      .productsModel
+                                                      ?.data?[index],
+                                                  index: index,
+                                                ),
+                                              );
+                                            },
+                                            child: CustomCaredProducts(
+                                              url: productsData
+                                                      .productsModel
+                                                      ?.data?[index]
+                                                      .mainImage ??
+                                                  "",
+                                              title: productsData.productsModel
+                                                      ?.data?[index].title ??
+                                                  "",
+                                              productId: productsData
+                                                      .productsModel
+                                                      ?.data?[index]
+                                                      .id ??
+                                                  0,
+                                              isShow: productsData.productsModel
+                                                      ?.data?[index].isShow ??
+                                                  0,
                                               index: index,
                                             ),
                                           );
                                         },
-                                        child: CustomCaredProducts(
-                                          url: productsData.productsModel
-                                                  ?.data?[index].mainImage ??
-                                              "",
-                                          title: productsData.productsModel
-                                                  ?.data?[index].title ??
-                                              "",
-                                          productId: productsData
-                                                  .productsModel
-                                                  ?.data?[index]
-                                                  .id ??
-                                              0,
-                                          isShow: productsData.productsModel?.data?[index].isShow??0,
-                                          index: index,
-                                        ),
-                                      );
-                                    },
-                                  )))
+                                      )))
                         ],
-                  ),
-                ))),
-          ),
-        );
+                      ),
+                    ))),
+      ),
+    );
   }
 }
