@@ -386,5 +386,6 @@
   "add": "Add",
   "acceptOffer": "Your offer is accepted",
   "payFrom": "You can pay from",
-  "completePaymentInformation": "complete Payment Information"
+  "completePaymentInformation": "complete Payment Information",
+  "wait": "Waiting"
 }

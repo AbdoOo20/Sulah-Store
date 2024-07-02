@@ -52,7 +52,7 @@ Future<void> offerDialog(BuildContext context, OfferProvider offerProvider,
             onPressed: () {
               Navigator.pop(context);
               offerProvider.addOfferToOrder(
-                  product.price, product.id, product.amount);
+                  int.parse(offerProvider.priceController.text.trim()), product.id, product.amount);
             },
           ),
         ],

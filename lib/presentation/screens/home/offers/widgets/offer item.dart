@@ -2,9 +2,10 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:khedmaty_store/core/logger.dart';
 import 'package:khedmaty_store/presentation/screens/home/offers/widgets/offer%20dialog.dart';
 import 'package:provider/provider.dart';
-
+import 'dart:developer' as de;
 import '../../../../../../core/res/text_styles.dart';
 import '../../../../../../core/resources/app_assets.dart';
 import '../../../../../../core/resources/app_colors.dart';
@@ -30,6 +31,9 @@ class _OfferItemState extends State<OfferItem> {
   @override
   Widget build(BuildContext context) {
     offerProvider = Provider.of(context);
+    // de.log(widget.product.statusOrder);
+    // de.log(widget.product.orderID.toString());
+    // de.log('------------------------------------');
     return Consumer<OfferProvider>(
       builder: (context, cart, child) {
         return Column(
@@ -133,6 +137,31 @@ class _OfferItemState extends State<OfferItem> {
                                         ],
                                       ),
                                     ),
+                                    SizedBox(width: 20.w),
+                                    if (widget.product.orderID != 0)
+                                      Text(
+                                        widget.product.statusOrder == 'waiting'
+                                            ? LocaleKeys.wait.tr()
+                                            : widget.product.statusOrder ==
+                                                    'accepted'
+                                                ? LocaleKeys.accept.tr()
+                                                : LocaleKeys.refusal.tr(),
+                                        style: TextStyles()
+                                            .getTitleStyle(
+                                              fontSize: 14.sp,
+                                            )
+                                            .customColor(
+                                              widget.product.statusOrder ==
+                                                      'waiting'
+                                                  ? AppColors.second
+                                                  : widget.product
+                                                              .statusOrder ==
+                                                          'accepted'
+                                                      ? AppColors.green
+                                                      : AppColors.errorColor,
+                                            ),
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
                                   ],
                                 ),
                                 if (widget.product.statusOrder == 'accepted')
@@ -140,16 +169,16 @@ class _OfferItemState extends State<OfferItem> {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Text(
-                                        LocaleKeys.acceptOffer.tr(),
-                                        style: TextStyles()
-                                            .getTitleStyle(
-                                              fontSize: 10.sp,
-                                            )
-                                            .customColor(AppColors.green),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 1,
-                                      ),
+                                      // Text(
+                                      //   LocaleKeys.acceptOffer.tr(),
+                                      //   style: TextStyles()
+                                      //       .getTitleStyle(
+                                      //     fontSize: 10.sp,
+                                      //   )
+                                      //       .customColor(AppColors.green),
+                                      //   overflow: TextOverflow.ellipsis,
+                                      //   maxLines: 1,
+                                      // ),
                                       Row(
                                         children: [
                                           Text(
@@ -161,35 +190,6 @@ class _OfferItemState extends State<OfferItem> {
                                                 .customColor(AppColors.green),
                                             overflow: TextOverflow.ellipsis,
                                             maxLines: 1,
-                                          ),
-                                          InkWell(
-                                            onTap: () {
-                                              push(PayWebViewScreen(
-                                                id: widget.product.orderID,
-                                                link:
-                                                    "https://checkout.tabby.ai/?sessionId=64a9a922-f489-4baa-a021-794a754d13ea&apiKey=pk_test_fa724f4b-c616-464d-82f9-4d0d18bbbabc&product=installments&merchantCode=Seuolasau",
-                                              ));
-                                            },
-                                            child: Container(
-                                              height: 30.h,
-                                              width: 50.w,
-                                              margin: EdgeInsets.all(4.r),
-                                              padding: EdgeInsets.all(1.r),
-                                              decoration: BoxDecoration(
-                                                color: AppColors.grayLite,
-                                                borderRadius:
-                                                    BorderRadius.circular(8.h),
-                                                border: Border.all(
-                                                  width: 1.w,
-                                                  color: Colors.transparent,
-                                                ),
-                                              ),
-                                              child: SVGIcon(
-                                                Assets.imagesTaby,
-                                                height: 40.h,
-                                                width: 60.w,
-                                              ),
-                                            ),
                                           ),
                                           InkWell(
                                             onTap: () {
@@ -229,7 +229,8 @@ class _OfferItemState extends State<OfferItem> {
                           ],
                         ),
                         if (!widget.isOffer &&
-                            widget.product.statusOrder != 'accepted')
+                            (widget.product.statusOrder == 'rejected' ||
+                            widget.product.orderID == 0))
                           IconButton(
                             onPressed: () {
                               offerDialog(

@@ -1,4 +1,6 @@
 
+import 'dart:developer';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/showToast.dart';
@@ -74,6 +76,7 @@ class OfferProvider with ChangeNotifier {
     dioClient = getIt();
     isLoading = true;
     notifyListeners();
+    log(price.toString());
     Map<String, dynamic> data = {
       'price': price,
       'amount': amount,
