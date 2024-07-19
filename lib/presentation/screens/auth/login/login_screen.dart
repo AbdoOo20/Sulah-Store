@@ -128,27 +128,6 @@ SaveUserData saveUserData = getIt();
                   ),
                 ),
 
-                SizedBox(height: 24.h),
-                Align(alignment: Alignment.center,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                           LocaleKeys.youHaveAccount.tr(),
-                          style: TextStyles()
-                              .getRegularStyle(fontSize: 14.sp)
-                              .customColor(AppColors.darkGray)),
-                      InkWell(onTap: (){push(Register());},
-                        child: Text(LocaleKeys.createAccount.tr(),
-                          style: TextStyles()
-                              .getRegularStyle(fontSize: 14.sp)
-                              .customColor(AppColors.main),
-                        ),
-                      )
-                    ],
-                  ),
-                  ),
                SizedBox(height: 25.h)
               ],
             ),

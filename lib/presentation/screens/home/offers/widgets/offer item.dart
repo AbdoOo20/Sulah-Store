@@ -186,7 +186,7 @@ class _OfferItemState extends State<OfferItem> {
                                               push(PayWebViewScreen(
                                                 id: widget.product.orderID,
                                                 link:
-                                                    "https://sulah.sa/moyasar/",
+                                                    "https://sulah.sa/moyasarSeller/",
                                               ));
                                             },
                                             child: Container(

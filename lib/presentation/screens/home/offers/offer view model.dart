@@ -36,7 +36,7 @@ class ProductOffer {
 
   factory ProductOffer.fromJson(Map<String, dynamic> json) => ProductOffer(
         id: json["id"],
-        orderID: json["my_order"] == null ? 0 : json["my_order"]['id'],
+        orderID: json["my_order"] == null ? 0 : json["my_order"]['offer_product_id'],
         amount: json["amount"],
         price: json["price"],
         totalPrice: json["total_price"],
