@@ -40,6 +40,7 @@ Future<void> offerDialog(BuildContext context, OfferProvider offerProvider,
               Navigator.of(context).pop();
             },
           ),
+          // f
           TextButton(
             child: Text(
               LocaleKeys.add.tr(),
