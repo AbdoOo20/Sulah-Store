@@ -1,4 +1,3 @@
-
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
@@ -18,6 +17,7 @@ class ProductOffer {
   String image;
   String name;
   String statusOrder;
+  String paymentStatus;
   int priceOrder;
 
   ProductOffer({
@@ -31,6 +31,7 @@ class ProductOffer {
     required this.name,
     required this.statusOrder,
     required this.priceOrder,
+    required this.paymentStatus,
   });
 
   factory ProductOffer.fromJson(Map<String, dynamic> json) => ProductOffer(
@@ -45,6 +46,8 @@ class ProductOffer {
         statusOrder:
             json['my_order'] == null ? 'waiting' : json['my_order']['status'],
         priceOrder: json['my_order'] == null ? 0 : json['my_order']['price'],
+        paymentStatus:
+            json['my_order'] == null ? '' : json['my_order']['payment_status'],
       );
 }
 
@@ -62,6 +65,8 @@ class OfferProvider with ChangeNotifier {
         await dioClient.get("${AppURL.kBaseURL}${AppURL.kOfferURL}");
     if (response.statusCode == 200) {
       response.data['data'].forEach((e) {
+        log(e.toString());
+        log('---------------------------------------------------------');
         offers.add(ProductOffer.fromJson(e));
       });
     } else {

@@ -164,21 +164,11 @@ class _OfferItemState extends State<OfferItem> {
                                       ),
                                   ],
                                 ),
-                                if (widget.product.statusOrder == 'accepted')
+                                if (widget.product.statusOrder == 'accepted' && widget.product.paymentStatus == 'waiting')
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      // Text(
-                                      //   LocaleKeys.acceptOffer.tr(),
-                                      //   style: TextStyles()
-                                      //       .getTitleStyle(
-                                      //     fontSize: 10.sp,
-                                      //   )
-                                      //       .customColor(AppColors.green),
-                                      //   overflow: TextOverflow.ellipsis,
-                                      //   maxLines: 1,
-                                      // ),
                                       Row(
                                         children: [
                                           Text(
@@ -223,6 +213,17 @@ class _OfferItemState extends State<OfferItem> {
                                         ],
                                       ),
                                     ],
+                                  ),
+                                if (widget.product.statusOrder == 'accepted' && widget.product.paymentStatus == 'paid')
+                                  Text(
+                                    LocaleKeys.paid.tr(),
+                                    style: TextStyles()
+                                        .getTitleStyle(
+                                      fontSize: 12.sp,
+                                    )
+                                        .customColor(AppColors.green),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 1,
                                   ),
                               ],
                             ),

@@ -387,5 +387,6 @@
   "acceptOffer": "Your offer is accepted",
   "payFrom": "You can pay from",
   "completePaymentInformation": "complete Payment Information",
-  "wait": "Waiting"
+  "wait": "Waiting",
+  "paid": "Payment Done"
 }

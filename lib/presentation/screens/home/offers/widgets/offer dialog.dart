@@ -17,8 +17,8 @@ Future<void> offerDialog(BuildContext context, OfferProvider offerProvider,
           LocaleKeys.enterPriceTitle.tr(),
           style: TextStyles()
               .getRegularStyle(
-                fontSize: 20.sp,
-              )
+            fontSize: 20.sp,
+          )
               .customColor(AppColors.main),
         ),
         content: CustomTextFieldNormal(
@@ -32,8 +32,8 @@ Future<void> offerDialog(BuildContext context, OfferProvider offerProvider,
               LocaleKeys.cancel.tr(),
               style: TextStyles()
                   .getRegularStyle(
-                    fontSize: 14.sp,
-                  )
+                fontSize: 14.sp,
+              )
                   .customColor(AppColors.main),
             ),
             onPressed: () {
@@ -45,14 +45,17 @@ Future<void> offerDialog(BuildContext context, OfferProvider offerProvider,
               LocaleKeys.add.tr(),
               style: TextStyles()
                   .getRegularStyle(
-                    fontSize: 14.sp,
-                  )
+                fontSize: 14.sp,
+              )
                   .customColor(AppColors.main),
             ),
             onPressed: () {
               Navigator.pop(context);
               offerProvider.addOfferToOrder(
-                  int.parse(offerProvider.priceController.text.trim()), product.id, product.amount);
+                  int.parse(offerProvider.priceController.text.trim()),
+                  product.id, product.amount).then((value) async {
+                await offerProvider.getOffers(context);
+              });
             },
           ),
         ],

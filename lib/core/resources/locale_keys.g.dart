@@ -16,6 +16,7 @@ abstract class  LocaleKeys {
   static const theBank  = 'theBank';
   static const wait  = 'wait';
   static const iBANBankAccountNumber  = 'IBANBankAccountNumber';
+  static const paid  = 'paid';
 
   //login start
   static const enterthepassword = 'enterthepassword';
