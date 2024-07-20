@@ -11,7 +11,7 @@ class Assets {
   static const String otplogo = 'assets/images/svg/otplogo.svg';
   static const String newpasswordlogo = 'assets/images/svg/newpasswordlogo.svg';
   static const String phone = 'assets/images/svg/phone.svg';
-  static const String intro1 = 'assets/images/png/intro1.png';
+  static const String intro1 = 'assets/images/png/intro11.jpeg';
   static const String intro2 = 'assets/images/png/intro2.png';
   static const String intro3 = 'assets/images/png/intro3.png';
   static const String back = 'assets/images/svg/back.svg';
