@@ -1,5 +1,5 @@
-import 'package:khedmaty_store/data/model/response/base/notificationModel.dart';
-import 'package:khedmaty_store/presentation/screens/home/Notifications/Notifications.dart';
+import 'package:sulah_store/data/model/response/base/notificationModel.dart';
+import 'package:sulah_store/presentation/screens/home/Notifications/Notifications.dart';
 import 'package:dio/dio.dart';
 
 import '../app_urls/app_url.dart';

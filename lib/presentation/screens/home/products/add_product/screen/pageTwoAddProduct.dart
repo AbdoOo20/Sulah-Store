@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/presentation/component/animation/list_animator.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/presentation/component/animation/list_animator.dart';
 import 'package:provider/provider.dart';
 import '../../../../../../core/res/text_styles.dart';
 import '../../../../../../core/resources/app_assets.dart';

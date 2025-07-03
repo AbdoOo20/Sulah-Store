@@ -1,5 +1,5 @@
-import 'package:khedmaty_store/core/routing/route.dart';
-import 'package:khedmaty_store/presentation/screens/auth/login/login_screen.dart';
+import 'package:sulah_store/core/routing/route.dart';
+import 'package:sulah_store/presentation/screens/auth/login/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../core/utils/app_constants.dart';
 import '../../presentation/screens/splash/splash.dart';

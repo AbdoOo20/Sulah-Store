@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:khedmaty_store/data/model/response/one_order_model.dart';
+import 'package:sulah_store/data/model/response/one_order_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

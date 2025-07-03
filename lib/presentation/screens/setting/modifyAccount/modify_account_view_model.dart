@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/routing/route.dart';
-import 'package:khedmaty_store/presentation/screens/setting/setting.dart';
+import 'package:sulah_store/core/routing/route.dart';
+import 'package:sulah_store/presentation/screens/setting/setting.dart';
 import '../../../../core/api_checker.dart';
 import '../../../../core/utils/showToast.dart';
 import '../../../../data/model/body/RegisterBody.dart';

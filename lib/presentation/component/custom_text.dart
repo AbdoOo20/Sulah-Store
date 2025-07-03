@@ -1,4 +1,4 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/resources/font_manager.dart';
@@ -35,7 +35,7 @@ class CustomText extends StatelessWidget {
       overflow: overflow,
       maxLines: maxLines,
       style: TextStyle(
-        color: color ?? Theme.of(context).textTheme.bodyText2?.color,
+        color: color ?? Theme.of(context).textTheme.bodyMedium?.color,
         fontSize: fontSize.sp,
         fontFamily: FontConstants.fontFamilyBold,
         fontWeight: fontWeight,

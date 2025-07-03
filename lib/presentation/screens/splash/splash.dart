@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/injection.dart';
-import 'package:khedmaty_store/presentation/screens/home/home_sereen/home.dart';
+import 'package:sulah_store/injection.dart';
+import 'package:sulah_store/presentation/screens/home/home_sereen/home.dart';
 import 'package:provider/provider.dart';
 import '../../../core/resources/app_assets.dart';
 import '../../../core/routing/route.dart';

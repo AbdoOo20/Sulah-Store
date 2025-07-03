@@ -1,7 +1,7 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/core/resources/app_assets.dart';
-import 'package:khedmaty_store/core/resources/app_colors.dart';
-import 'package:khedmaty_store/presentation/component/svg_icon.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/resources/app_assets.dart';
+import 'package:sulah_store/core/resources/app_colors.dart';
+import 'package:sulah_store/presentation/component/svg_icon.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/resources/font_manager.dart';
 import '../custom_text.dart';

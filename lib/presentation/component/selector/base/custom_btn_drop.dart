@@ -1,5 +1,5 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/core/resources/app_colors.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/resources/app_colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -63,7 +63,7 @@ class CustomButtonArrow extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.all(Radius.circular(kFormRadiusSmall.r),),
-                  border: Border.all(color:error!=null? Theme.of(context).errorColor: AppColors.main)),
+                  border: Border.all(color:error!=null? Theme.of(context).disabledColor: AppColors.main)),
               padding: const EdgeInsets.all(kFormPaddingAllSmall),
               child: loading
                   ? Center(
@@ -130,7 +130,7 @@ class CustomButtonArrow extends StatelessWidget {
                     style: Theme.of(context)
                         .inputDecorationTheme
                         .errorStyle
-                        ?.copyWith(color: Theme.of(context).errorColor),
+                        ?.copyWith(color: Theme.of(context).disabledColor),
                   ),
                 ],
               )

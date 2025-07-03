@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:khedmaty_store/core/utils/alerts.dart';
+import 'package:sulah_store/core/utils/alerts.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 

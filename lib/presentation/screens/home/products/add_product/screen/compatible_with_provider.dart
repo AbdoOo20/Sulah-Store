@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/injection.dart';
+import 'package:sulah_store/injection.dart';
 
 import '../../../../../../core/api_checker.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/utils/showToast.dart';
-import 'package:khedmaty_store/data/model/response/emptyModel.dart';
+import 'package:sulah_store/core/utils/showToast.dart';
+import 'package:sulah_store/data/model/response/emptyModel.dart';
 import '../data/model/response/base/api_response.dart';
 import 'package:provider/provider.dart';
 

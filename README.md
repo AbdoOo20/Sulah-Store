@@ -1,4 +1,4 @@
-# khedmaty_store
+# sulah_store
 
 A new Flutter project.
 

@@ -1,4 +1,4 @@
-import 'package:khedmaty_store/data/repository/home_Repo.dart';
+import 'package:sulah_store/data/repository/home_Repo.dart';
 import 'package:flutter/cupertino.dart';
 import '../../../../core/api_checker.dart';
 import '../../../../data/model/response/base/api_response.dart';

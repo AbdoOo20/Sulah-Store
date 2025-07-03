@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/core/res/theme/value_manager.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/res/theme/value_manager.dart';
 
 import '../resources/values_manager.dart';
 import 'color.dart';

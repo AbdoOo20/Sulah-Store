@@ -1,5 +1,5 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/data/model/response/orders_model.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/data/model/response/orders_model.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_cared.dart';

@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/data/repository/main_repo.dart';
+import 'package:sulah_store/data/repository/main_repo.dart';
 import '../../../../../core/api_checker.dart';
 import '../../../../../data/model/body/contact_UsBody.dart';
 import '../../../../../data/model/response/base/api_response.dart';

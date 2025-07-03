@@ -1,10 +1,10 @@
 // import 'package:easy_localization/easy_localization.dart';
 // import 'package:flutter/material.dart';
-// import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-// import 'package:khedmaty_store/core/res/text_styles.dart';
-// import 'package:khedmaty_store/presentation/component/spaces.dart';
-// import 'package:khedmaty_store/presentation/component/svg_icon.dart';
-// import 'package:khedmaty_store/presentation/screens/setting/setting_view_model.dart';
+// import 'package:sulah_store/core/extensions/num_extensions.dart';
+// import 'package:sulah_store/core/res/text_styles.dart';
+// import 'package:sulah_store/presentation/component/spaces.dart';
+// import 'package:sulah_store/presentation/component/svg_icon.dart';
+// import 'package:sulah_store/presentation/screens/setting/setting_view_model.dart';
 // import 'package:provider/provider.dart';
 // import '../../../../../../core/resources/resources.dart';
 //

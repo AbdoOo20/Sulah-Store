@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/res/text_styles.dart';
 import '../../../../core/resources/values_manager.dart';
@@ -84,7 +84,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     width: deviceWidth,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Theme.of(context).backgroundColor,
+                      color: Theme.of(context).primaryColor,
                       borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(kFormRadius),
                           topRight: Radius.circular(kFormRadius)),

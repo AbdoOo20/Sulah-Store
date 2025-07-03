@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart' as el;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khedmaty_store/presentation/firebase_notification/notification_services.dart';
+import 'package:sulah_store/presentation/firebase_notification/notification_services.dart';
 
 import 'core/res/theme/theme.dart';
 import 'main.dart';

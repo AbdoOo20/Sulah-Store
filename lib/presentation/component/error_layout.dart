@@ -1,4 +1,4 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +48,7 @@ class ErrorView extends StatelessWidget {
           TextButton(
             child: Text(
               tr(LocaleKeys.retry),
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             onPressed: _onRetry,
             style: TextButton.styleFrom(shape: retryShape,),

@@ -1,10 +1,10 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/routing/route.dart';
-import 'package:khedmaty_store/core/utils/showToast.dart';
-import 'package:khedmaty_store/data/repository/SaveUserData.dart';
-import 'package:khedmaty_store/injection.dart';
+import 'package:sulah_store/core/routing/route.dart';
+import 'package:sulah_store/core/utils/showToast.dart';
+import 'package:sulah_store/data/repository/SaveUserData.dart';
+import 'package:sulah_store/injection.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/res/text_styles.dart';
 import '../../../../core/resources/app_assets.dart';

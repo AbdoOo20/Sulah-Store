@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/routing/route.dart';
+import 'package:sulah_store/core/routing/route.dart';
 import '../../../../../../data/repository/auth_repo.dart';
 import '../../../../../core/api_checker.dart';
 import '../../../../../core/utils/showToast.dart';

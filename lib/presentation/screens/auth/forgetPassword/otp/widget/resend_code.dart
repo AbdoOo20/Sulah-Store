@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/core/res/text_styles.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/res/text_styles.dart';
 import 'package:provider/provider.dart';
 import '../../../../../../core/resources/resources.dart';
 import '../otp_view_model.dart';

@@ -1,7 +1,7 @@
-import 'package:khedmaty_store/data/model/body/porduct_body.dart';
+import 'package:sulah_store/data/model/body/porduct_body.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/presentation/screens/auth/login/login_screen.dart';
+import 'package:sulah_store/presentation/screens/auth/login/login_screen.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../core/api_checker.dart';
 import '../../../../core/routing/route.dart';

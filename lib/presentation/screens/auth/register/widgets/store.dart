@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/injection.dart';
+import 'package:sulah_store/injection.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/presentation/screens/auth/register/widgets/upperPart.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/presentation/screens/auth/register/widgets/upperPart.dart';
 import '../../../../../core/resources/app_assets.dart';
 import '../../../../../core/resources/app_colors.dart';
 import '../../../../../core/resources/locale_keys.g.dart';

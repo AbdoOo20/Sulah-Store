@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
 
 class CustomIcon extends StatelessWidget {
   final IconData icon;

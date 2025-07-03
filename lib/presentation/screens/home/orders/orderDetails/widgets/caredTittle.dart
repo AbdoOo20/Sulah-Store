@@ -1,8 +1,8 @@
-import 'package:khedmaty_store/core/extensions/num_extensions.dart';
-import 'package:khedmaty_store/core/helper/socialMediaHelper.dart';
+import 'package:sulah_store/core/extensions/num_extensions.dart';
+import 'package:sulah_store/core/helper/socialMediaHelper.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/resources/resources.dart';
+import 'package:sulah_store/core/resources/resources.dart';
 
 import '../../../../../../core/res/text_styles.dart';
 import '../../../../../../data/model/response/one_order_model.dart';

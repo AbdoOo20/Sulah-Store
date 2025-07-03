@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:khedmaty_store/core/routing/route.dart';
-import 'package:khedmaty_store/data/repository/auth_repo.dart';
-import 'package:khedmaty_store/presentation/screens/auth/login/login_screen.dart';
+import 'package:sulah_store/core/routing/route.dart';
+import 'package:sulah_store/data/repository/auth_repo.dart';
+import 'package:sulah_store/presentation/screens/auth/login/login_screen.dart';
 import '../../../../core/api_checker.dart';
 import '../../../../core/resources/locale_keys.g.dart';
 import '../../../../data/model/response/base/api_response.dart';
